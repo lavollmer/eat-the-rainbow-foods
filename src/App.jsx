@@ -4,6 +4,7 @@ import Header from "./assets/Header";
 import Footer from "./assets/Footer";
 import Learn from "./assets/LearnBenefits";
 import Play from "./assets/PlayTheGame";
+import Scoreboard from "./assets/Scoreboard";
 
 function App() {
   return (
