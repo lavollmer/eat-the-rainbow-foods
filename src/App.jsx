@@ -2,7 +2,8 @@ import "./App.css";
 import React from "react";
 import Header from "./assets/Header";
 import Footer from "./assets/Footer";
-import Learn from "./assets/LearnBenefits"
+import Learn from "./assets/LearnBenefits";
+import Play from "./assets/PlayTheGame";
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
         <Header />
       </div>
       <div>
-        <Learn/>
+        <Learn />
+      </div>
+      <div>
+        <Play />
       </div>
       <div>
         <Footer />
