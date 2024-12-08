@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 //importing useState from react
-import {useState} from 'react'
+import { useState } from "react";
 import Orange from "./images/orange.jpg";
 
 const Carousel = () => {
@@ -18,7 +18,7 @@ const Carousel = () => {
       //if index is equal to the length of the images array, set the index to 0
       setIndex(0);
     }
-  }
+  };
 
   const prevSlide = () => {
     //if index is greater than 0, decrement the index by 1
@@ -29,18 +29,39 @@ const Carousel = () => {
       setIndex(images.length - 1);
     }
 
-
-  return (
-    <div className="relative w-full max-w-3xl mx-auto">
-      <div className='overflow-hidden relative h-64'>
-        {images.map((images, imageIndex) => {
-        <div key={index} className={`absolute inset-0 transition-transform transform ${index === currentIndex ? 'translate-x-0' : 'translate-x-full'}`}>
-          <img src={images} alt="food" className="w-full h-full object-cover" />
+    return (
+      <div className="relative w-full max-w-3xl mx-auto">
+        <div className="overflow-hidden relative h-64">
+          {images.map((images, imageIndex) => {
+            <div
+              key={index}
+              className={`absolute inset-0 transition-transform transform ${
+                index === currentIndex ? "translate-x-0" : "translate-x-full"
+              }`}
+            >
+              <img
+                src={images}
+                alt="food"
+                className="w-full h-full object-cover"
+              />
+            </div>;
+          })}
         </div>
-        )}
+        <button
+          onClick={prevSlide}
+          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2"
+        >
+          Prev
+        </button>
+        <button
+          onClick={nextSlide}
+          className="abssolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2"
+        >
+          Next
+        </button>
       </div>
-    </div>
-  )
-}
+    );
+  };
+};
 
 export default Carousel;
