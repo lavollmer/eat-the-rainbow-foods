@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Eat the Rainbow Foods Game</h1>
+        <h1 className="text-blue">Eat the Rainbow Foods Game</h1>
       </div>
       <div>
         <Header />
@@ -20,6 +20,9 @@ function App() {
       </div>
       <div>
         <Play />
+      </div>
+      <div>
+        <Scoreboard />
       </div>
       <div>
         <Footer />
