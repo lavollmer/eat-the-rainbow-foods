@@ -7,7 +7,7 @@ const Header = () => {
   const images = [Orange];
 
   return (
-    <div>
+    <div className="flex flex-col items-center w-full">
       <h1>Food Slideshow</h1>
       <div>
         <Carousel images={images}/>
