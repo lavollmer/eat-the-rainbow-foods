@@ -10,21 +10,21 @@ function App() {
   return (
     <>
       <div>
-        <h1 className="text-blue">Eat the Rainbow Foods Game</h1>
+        <h1 className="flex flex-row items-center justify-center text-lg">Eat the Rainbow Foods Game</h1>
       </div>
-      <div>
+      <div className="flex flex-row items-center justify-center">
         <Header />
       </div>
-      <div>
+      <div className="flex flex-row items-center justify-center">
         <Learn />
       </div>
-      <div>
+      <div className="flex flex-row items-center justify-center">
         <Play />
       </div>
-      <div>
+      <div className="flex flex-row items-center justify-center">
         <Scoreboard />
       </div>
-      <div>
+      <div className="flex flex-row items-center justify-center pt-10">
         <Footer />
       </div>
     </>
