@@ -1,16 +1,13 @@
-import React from 'react'
-import Carousel from './Carousel'
-import Orange from "./images/orange.jpg";
+import React from "react";
+import Carousel from "./Carousel";
 
 const Header = () => {
-  const images = [Orange];
-
   return (
     <div>
-        <h1>Food Slideshow</h1>
-        <Carousel images={image}/>
+      <h1>Food Slideshow</h1>
+      <Carousel />
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
