@@ -34,7 +34,9 @@ const Carousel = () => {
     <div className="relative w-full max-w-3xl mx-auto">
       <div className='overflow-hidden relative h-64'>
         {images.map((images, imageIndex) => {
-        <div></div>
+        <div key={index} className={`absolute inset-0 transition-transform transform ${index === currentIndex ? 'translate-x-0' : 'translate-x-full'}`}>
+          <img src={images} alt="food" className="w-full h-full object-cover" />
+        </div>
         )}
       </div>
     </div>
