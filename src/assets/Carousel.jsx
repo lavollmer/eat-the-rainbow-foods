@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Orange from "./images/orange.jpg";
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,6 +33,9 @@ const Carousel = ({ images }) => {
           </div>
         ))}
       </div>
+      <button className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2">
+        Next
+      </button>
     </div>
   );
 };
