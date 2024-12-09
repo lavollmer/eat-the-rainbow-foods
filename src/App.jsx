@@ -15,7 +15,7 @@ function App() {
             Eat the Rainbow Foods Game
           </h1>
         </div>
-        <div className="flex flex-row">
+        <div className="flex flex-row p-10">
           <Header />
         </div>
         <div className="flex flex-row items-center justify-center">

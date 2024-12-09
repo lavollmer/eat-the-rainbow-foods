@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className="flex flex-col items-center w-full">
       <h1>Food Slideshow</h1>
-      <div>
+      <div className="flex flex-row p-10">
         <Carousel images={images}/>
       </div>
     </div>
