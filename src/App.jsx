@@ -9,13 +9,13 @@ import Scoreboard from "./assets/Scoreboard";
 function App() {
   return (
     <>
-      <div className="flex flex-col p-10">
+      <div className="flex flex-col">
         <div>
           <h1 className="flex flex-row items-center justify-center text-lg">
             Eat the Rainbow Foods Game
           </h1>
         </div>
-        <div className="flex flex-row p-10">
+        <div className="flex flex-row">
           <Header />
         </div>
         <div className="flex flex-row items-center justify-center">

@@ -2,7 +2,7 @@ import React from "react";
 //importing useState from react
 import { useState } from "react";
 
-const Carousel = ({ images = [] }) => {
+const Carousel = ({ images }) => {
   //using useState to se the index of the image and starting at 0
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -17,9 +17,9 @@ const Carousel = ({ images = [] }) => {
   };
 
   return (
-    <div className="relative w-full max-w-3xl mx-auto">
-      <div className="w-full h-full">
-        {images.map((images, index) => {
+    <div className="relative w-full max-w-5xl mx-auto">
+      <div className="overflow-hidden w-96 h-96">
+        {images.map((image, index) => (
           <div
             key={index}
             className={`absolute inset-0 transition-transform transform ${
@@ -27,12 +27,12 @@ const Carousel = ({ images = [] }) => {
             }`}
           >
             <img
-              src={images}
-              alt={`Slide-${index}`}
+              src={image}
+              alt={`Slide ${index}`}
               className="w-full h-full object-cover"
             />
-          </div>;
-        })}
+          </div>
+        ))}
       </div>
       <button
         onClick={prevSlide}
