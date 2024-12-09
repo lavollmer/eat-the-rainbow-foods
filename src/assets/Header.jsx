@@ -1,10 +1,12 @@
 import React from "react";
 import Carousel from "./Carousel";
 import Orange from "./images/orange.jpg";
+import Banana from "./images/banana.jpg";
+import Avocado from "./images/avocado.jpg";
 
 const Header = () => {
   //creating an array of images
-  const images = [Orange];
+  const images = [Orange, Banana, Avocado];
 
   return (
     <div className="flex flex-col items-center w-full">
