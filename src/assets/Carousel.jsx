@@ -18,21 +18,21 @@ const Carousel = ({ images }) => {
 
   return (
     <div className="relative w-full max-w-5xl mx-auto">
-      <div className="overflow-hidden w-96 h-96">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-transform transform ${
-              index === currentIndex ? "translate-x-0" : "translate-x-full"
-            }`}
-          >
-            <img
-              src={image}
-              alt={`Slide ${index}`}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ))}
+      <div className="overflow-hidden w-full h-96">
+        <div
+          className="flex transition-transform duration-500"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {images.map((image, index) => (
+            <div key={index} className="w-full flex-shrink-0">
+              <img
+                src={image}
+                alt={`Slide ${index}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
       </div>
       <button
         onClick={prevSlide}
@@ -42,7 +42,7 @@ const Carousel = ({ images }) => {
       </button>
       <button
         onClick={nextSlide}
-        className="abssolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-lg"
+        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-lg"
       >
         Next
       </button>
