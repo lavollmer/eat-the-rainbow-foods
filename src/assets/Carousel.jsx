@@ -34,6 +34,7 @@ const Carousel = ({ images }) => {
           ))}
         </div>
       </div>
+      <div className="p-10">
       <button
         onClick={prevSlide}
         className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-lg"
@@ -46,6 +47,7 @@ const Carousel = ({ images }) => {
       >
         Next
       </button>
+      </div>
     </div>
   );
 };
