@@ -18,7 +18,7 @@ const Carousel = ({ images }) => {
 
   return (
     <div className="relative w-full max-w-5xl mx-auto">
-      <div className="overflow-hidden w-full h-96">
+      <div className="overflow-hidden w-full h-full">
         <div
           className="flex transition-transform duration-500"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -35,18 +35,18 @@ const Carousel = ({ images }) => {
         </div>
       </div>
       <div className="p-10">
-      <button
-        onClick={prevSlide}
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-lg"
-      >
-        Prev
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-lg"
-      >
-        Next
-      </button>
+        <button
+          onClick={prevSlide}
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-lg"
+        >
+          Previous
+        </button>
+        <button
+          onClick={nextSlide}
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-lg"
+        >
+          Next
+        </button>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center pt-10">
         <h1 className="font-bold text-3xl">
           The Easiest Game to Track Healthy Food Eating
         </h1>
