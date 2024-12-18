@@ -6,9 +6,6 @@ const About = () => {
   return (
     <div>
         <div>
-            <Header />
-        </div>
-        <div>
             <h1>Our Story</h1>
             <p>This is our story.</p>
         </div>
