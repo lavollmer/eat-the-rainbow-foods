@@ -8,6 +8,8 @@ import Learn from "./assets/LearnBenefits";
 import Play from "./assets/PlayTheGame";
 import Scoreboard from "./assets/Scoreboard";
 import About from "./assets/About";
+import GameLevels from "./assets/GameLevels";
+import Support from "./assets/Support";
 
 function App() {
   return (
@@ -15,9 +17,19 @@ function App() {
       <BrowserRouter>
         <nav>
           <Link to="/about">About</Link>
+          <Link to="/play">Play</Link>
+          <Link to="/gamelevels">Game Levels</Link>
+          <Link to="/learn">Learn</Link>
+          <Link to="/scoreboard">Scoreboard</Link>
+          <Link to="/support">Support</Link>
         </nav>
         <Routes>
           <Route path="/about" element={<About />} />
+          <Route path="/play" element={<Play />} />
+          <Route path="/gamelevels" element={<GameLevels />} />
+          <Route path="/learn" element={<Learn />} />
+          <Route path="/scoreboard" element={<Scoreboard />} />
+          <Route path="/support" element={<Support />} />
         </Routes>
       </BrowserRouter>
       <div className="flex flex-col p-6">
