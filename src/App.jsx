@@ -15,8 +15,9 @@ import Home from "./assets/Home";
 function App() {
   return (
     <>
+    <div className="bg-mint-cream h-full w-full">
       <BrowserRouter>
-        <nav className="flex flex-row justify-center items-center space-x-4 m-10">
+        <nav className="flex flex-row justify-center items-center space-x-4">
           <div>
             <h1>Eat the Rainbow Game</h1>
           </div>
@@ -43,6 +44,7 @@ function App() {
           <Footer />
         </div>
       </BrowserRouter>
+      </div>
     </>
   );
 }
