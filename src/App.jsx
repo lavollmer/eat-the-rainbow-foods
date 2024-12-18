@@ -39,8 +39,9 @@ function App() {
           <Route path="/scoreboard" element={<Scoreboard />} />
           <Route path="/support" element={<Support />} />
         </Routes>
-
-        <Footer />
+        <div className="m-10">
+          <Footer />
+        </div>
       </BrowserRouter>
     </>
   );
