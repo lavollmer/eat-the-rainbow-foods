@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <nav>
+        <nav className="flex flex-row justify-center items-center space-x-4 font-bold m-10">
           <Link to="/about">About</Link>
           <Link to="/play">Play</Link>
           <Link to="/gamelevels">Game Levels</Link>
@@ -31,7 +31,7 @@ function App() {
           <Route path="/scoreboard" element={<Scoreboard />} />
           <Route path="/support" element={<Support />} />
         </Routes>
-      </BrowserRouter>
+      
       <div className="flex flex-col p-6">
         <div>
           <h1 className="flex flex-row items-center justify-center text-lg pt-10">
@@ -54,6 +54,7 @@ function App() {
           <Footer />
         </div>
       </div>
+      </BrowserRouter>
     </>
   );
 }
