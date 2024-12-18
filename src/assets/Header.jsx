@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className="flex flex-col items-center w-full">
       <div className="flex flex-row p-10">
-        <Carousel images={images}/>
+        <Carousel images={images} />
       </div>
     </div>
   );

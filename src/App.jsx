@@ -10,20 +10,28 @@ import Scoreboard from "./assets/Scoreboard";
 import About from "./assets/About";
 import GameLevels from "./assets/GameLevels";
 import Support from "./assets/Support";
+import Home from "./assets/Home";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <nav className="flex flex-row justify-center items-center space-x-4 font-bold m-10">
-          <Link to="/about">About</Link>
-          <Link to="/play">Play</Link>
-          <Link to="/gamelevels">Game Levels</Link>
-          <Link to="/learn">Learn</Link>
-          <Link to="/scoreboard">Scoreboard</Link>
-          <Link to="/support">Support</Link>
+        <nav className="flex flex-row justify-center items-center space-x-4 m-10">
+          <div>
+            <h1>Eat the Rainbow Game</h1>
+          </div>
+          <div className="flex flex-row space-x-4 font-bold">
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/play">Play</Link>
+            <Link to="/gamelevels">Game Levels</Link>
+            <Link to="/learn">Learn</Link>
+            <Link to="/scoreboard">Scoreboard</Link>
+            <Link to="/support">Support</Link>
+          </div>
         </nav>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/play" element={<Play />} />
           <Route path="/gamelevels" element={<GameLevels />} />
@@ -31,29 +39,8 @@ function App() {
           <Route path="/scoreboard" element={<Scoreboard />} />
           <Route path="/support" element={<Support />} />
         </Routes>
-      
-      <div className="flex flex-col p-6">
-        <div>
-          <h1 className="flex flex-row items-center justify-center text-lg pt-10">
-            Eat the Rainbow Foods Game
-          </h1>
-        </div>
-        <div className="flex flex-row">
-          <Header />
-        </div>
-        <div className="flex flex-row items-center justify-center">
-          <Learn />
-        </div>
-        <div className="flex flex-row items-center justify-center">
-          <Play />
-        </div>
-        <div className="flex flex-row items-center justify-center">
-          <Scoreboard />
-        </div>
-        <div className="flex flex-row items-center justify-center pt-10">
-          <Footer />
-        </div>
-      </div>
+
+        <Footer />
       </BrowserRouter>
     </>
   );
