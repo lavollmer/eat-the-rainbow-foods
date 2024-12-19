@@ -11,6 +11,7 @@ import Support from "./assets/Support";
 import Home from "./assets/Home";
 import Game from "./assets/Game";
 import Logo from "./assets/images/logobgremove.png";
+import EatButton from "./assets/images/eatbutton.png";
 
 function App() {
   return (
@@ -19,6 +20,17 @@ function App() {
         <div className="flex flex-row justify-center items-center space-x-4">
           <img src={Logo} alt="logo" className="h-80 w-80" />
         </div>
+        <div>
+          <h1 className="flex flex-col items-center justify-center">
+            eat well
+          </h1>
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <button className="flex flex-col items-center justify-center outline-4 outline-black py-10 px-10">
+            <img src={EatButton} alt="eatbutton" className="object-fill rounded-lg" />
+          </button>
+        </div>
+
         {/* <BrowserRouter>
           <nav className="flex flex-row justify-center items-center space-x-4">
             <div>
