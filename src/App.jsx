@@ -10,13 +10,16 @@ import About from "./assets/About";
 import Support from "./assets/Support";
 import Home from "./assets/Home";
 import Game from "./assets/Game";
-import Logo from "./assets/images/logo.png";
+import Logo from "./assets/images/logobgremove.png";
 
 function App() {
   return (
     <>
       <div className="bg-mint-cream min-h-screen font-roboto">
-        <BrowserRouter>
+        <div className="flex flex-row justify-center items-center space-x-4">
+          <img src={Logo} alt="logo" className="h-80 w-80" />
+        </div>
+        {/* <BrowserRouter>
           <nav className="flex flex-row justify-center items-center space-x-4">
             <div>
               <img src={Logo} alt="logo" className="h-20" />
@@ -43,7 +46,7 @@ function App() {
           <div className="m-10">
             <Footer />
           </div>
-        </BrowserRouter>
+        </BrowserRouter> */}
       </div>
     </>
   );
