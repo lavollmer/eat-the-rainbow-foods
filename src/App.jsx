@@ -32,12 +32,12 @@ function App() {
         <div className="flex flex-col items-center justify-center pt-10">
           <button
             onClick={handleOnClick}
-            className="flex flex-col items-center justify-center outline-4 outline-black"
+            className="flex flex-col items-center justify-center"
           >
             <img
               src={EatButton}
               alt="Play Eat The Rainbow Game"
-              className="h-20 h-40 md:h-40 md:h-60 rounded-lg"
+              className="h-20 h-40 md:h-40 md:h-60 rounded-lg outline-4 outline-black hover:outline-8 transition-all duration-300"
             />
           </button>
         </div>
