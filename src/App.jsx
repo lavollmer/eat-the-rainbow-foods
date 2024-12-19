@@ -25,9 +25,13 @@ function App() {
             eat well
           </h1>
         </div>
-        <div className="flex flex-col items-center justify-center">
-          <button className="flex flex-col items-center justify-center outline-4 outline-black py-10 px-10">
-            <img src={EatButton} alt="eatbutton" className="object-fill rounded-lg" />
+        <div className="flex flex-col items-center justify-center pt-10">
+          <button className="flex flex-col items-center justify-center outline-4 outline-black">
+            <img
+              src={EatButton}
+              alt="Play Eat The Rainbow Game"
+              className="h-20 h-40 md:h-40 md:h-60 rounded-lg"
+            />
           </button>
         </div>
 
