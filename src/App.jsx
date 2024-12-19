@@ -9,6 +9,7 @@ import Scoreboard from "./assets/Scoreboard";
 import About from "./assets/About";
 import Support from "./assets/Support";
 import Home from "./assets/Home";
+import Game from "./assets/Game";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Link to="/">Home</Link>
               <Link to="/about">About</Link>
               <Link to="/play">Play</Link>
+              <Link to="/game">Game</Link>
               <Link to="/learn">Learn</Link>
               <Link to="/scoreboard">Scoreboard</Link>
               <Link to="/support">Support</Link>
@@ -32,6 +34,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/play" element={<Play />} />
+            <Route path="/game" element={<Game />} />
             <Route path="/learn" element={<Learn />} />
             <Route path="/scoreboard" element={<Scoreboard />} />
             <Route path="/support" element={<Support />} />
