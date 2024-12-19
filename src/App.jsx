@@ -10,15 +10,16 @@ import About from "./assets/About";
 import Support from "./assets/Support";
 import Home from "./assets/Home";
 import Game from "./assets/Game";
+import Logo from "./assets/images/logo.png";
 
 function App() {
   return (
     <>
-      <div className="bg-mint-cream min-h-screen">
+      <div className="bg-mint-cream min-h-screen font-roboto">
         <BrowserRouter>
           <nav className="flex flex-row justify-center items-center space-x-4">
             <div>
-              <h1>Eat the Rainbow Game</h1>
+              <img src={Logo} alt="logo" className="h-20" />
             </div>
             <div className="flex flex-row space-x-4 font-bold">
               <Link to="/">Home</Link>

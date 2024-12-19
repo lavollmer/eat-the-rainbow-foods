@@ -10,7 +10,10 @@ module.exports = {
         'pink': '#F194B4',
         'yellow': '#FFB100',
         'mint-cream':'#EFF9F0'
-      }
+      },
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+      },
     },
   },
   plugins: [],
