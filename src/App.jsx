@@ -14,6 +14,10 @@ import Logo from "./assets/images/logobgremove.png";
 import EatButton from "./assets/images/eatbutton.png";
 
 function App() {
+  const handleOnClick = () => {
+    window.location.href = "/play";
+  };
+
   return (
     <>
       <div className="bg-mint-cream min-h-screen font-roboto">
@@ -22,11 +26,14 @@ function App() {
         </div>
         <div>
           <h1 className="flex flex-col items-center justify-center">
-            eat well
+            Eat healthy and track your progress
           </h1>
         </div>
         <div className="flex flex-col items-center justify-center pt-10">
-          <button className="flex flex-col items-center justify-center outline-4 outline-black">
+          <button
+            onClick={handleOnClick}
+            className="flex flex-col items-center justify-center outline-4 outline-black"
+          >
             <img
               src={EatButton}
               alt="Play Eat The Rainbow Game"
@@ -35,21 +42,7 @@ function App() {
           </button>
         </div>
 
-        {/* <BrowserRouter>
-          <nav className="flex flex-row justify-center items-center space-x-4">
-            <div>
-              <img src={Logo} alt="logo" className="h-20" />
-            </div>
-            <div className="flex flex-row space-x-4 font-bold">
-              <Link to="/">Home</Link>
-              <Link to="/about">About</Link>
-              <Link to="/play">Play</Link>
-              <Link to="/game">Game</Link>
-              <Link to="/learn">Learn</Link>
-              <Link to="/scoreboard">Scoreboard</Link>
-              <Link to="/support">Support</Link>
-            </div>
-          </nav>
+        <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -59,10 +52,7 @@ function App() {
             <Route path="/scoreboard" element={<Scoreboard />} />
             <Route path="/support" element={<Support />} />
           </Routes>
-          <div className="m-10">
-            <Footer />
-          </div>
-        </BrowserRouter> */}
+        </BrowserRouter>
       </div>
     </>
   );
