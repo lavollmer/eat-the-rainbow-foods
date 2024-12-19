@@ -17,11 +17,17 @@ const Home = () => {
         </p>
       </div>
       <div className="flex justify-center pt-10">
-        <button onClick={handleOnClick} className="bg-black text-white rounded-lg px-4 py-4 hover:bg-grey hover:outline-green">
+        <button
+          onClick={handleOnClick}
+          className="bg-black text-white rounded-lg px-4 py-4 hover:bg-grey hover:outline-green"
+        >
           Get Started Today!
         </button>
       </div>
       <Header />
+      <div>
+        <h1>It's really simple to play</h1>
+      </div>
     </div>
   );
 };
