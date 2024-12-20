@@ -22,21 +22,21 @@ function App() {
   return (
     <>
       <div className="bg-mint-cream min-h-screen font-roboto">
-        <div>
-          <button className="flex flex-row font-bold items-center justify-center text-lg">
+        <div className="flex flex-row justify-end items-center space-x-4 p-4">
+          <button className="flex flex-row flex-end font-bold items-center justify-center text-xl hover:animate-pulse">
             <IoLogInOutline />
             Login
           </button>
         </div>
-        <div className="flex flex-row justify-center items-center space-x-4">
+        <div className="flex flex-row justify-center items-center space-x-2">
           <img
             src={Logo}
             alt="logo"
-            className="h-80 w-80 hover:animate-pulse"
+            className="h-80 w-80 "
           />
         </div>
         <div>
-          <h1 className="flex flex-col items-center justify-center font-bold">
+          <h1 className="flex flex-col items-center justify-center">
             Eat healthy and track your progress
           </h1>
         </div>
