@@ -22,10 +22,10 @@ function App() {
     <>
       <div className="bg-mint-cream min-h-screen font-roboto">
         <div className="flex flex-row justify-center items-center space-x-4">
-          <img src={Logo} alt="logo" className="h-80 w-80" />
+          <img src={Logo} alt="logo" className="h-80 w-80 hover:animate-pulse" />
         </div>
         <div>
-          <h1 className="flex flex-col items-center justify-center">
+          <h1 className="flex flex-col items-center justify-center font-bold">
             Eat healthy and track your progress
           </h1>
         </div>
