@@ -29,11 +29,7 @@ function App() {
           </button>
         </div>
         <div className="flex flex-row justify-center items-center space-x-2">
-          <img
-            src={Logo}
-            alt="logo"
-            className="h-80 w-80 "
-          />
+          <img src={Logo} alt="logo" className="h-80 w-80 " />
         </div>
         <div>
           <h1 className="flex flex-col items-center justify-center">
@@ -54,6 +50,7 @@ function App() {
         </div>
 
         <BrowserRouter>
+          <Link path="/play" element={<Play />} />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
