@@ -12,6 +12,7 @@ import Home from "./assets/Home";
 import Game from "./assets/Game";
 import Logo from "./assets/images/logobgremove.png";
 import EatButton from "./assets/images/eatbutton.png";
+import { IoLogInOutline } from "react-icons/io5";
 
 function App() {
   const handleOnClick = () => {
@@ -21,8 +22,18 @@ function App() {
   return (
     <>
       <div className="bg-mint-cream min-h-screen font-roboto">
+        <div>
+          <button className="flex flex-row font-bold items-center justify-center text-lg">
+            <IoLogInOutline />
+            Login
+          </button>
+        </div>
         <div className="flex flex-row justify-center items-center space-x-4">
-          <img src={Logo} alt="logo" className="h-80 w-80 hover:animate-pulse" />
+          <img
+            src={Logo}
+            alt="logo"
+            className="h-80 w-80 hover:animate-pulse"
+          />
         </div>
         <div>
           <h1 className="flex flex-col items-center justify-center font-bold">
